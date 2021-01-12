@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>cleverbridge Technical Assessment</title>
+    <!-- External sources/libraries -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+    <!-- Native styles/scripts -->
+    <link rel="stylesheet" href="styles.css">
+    <script src="base-scripts.js"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <h1>CandyBreak Industries, LLC</h1>
+    </header>
+
+    <!-- Main Cart Content -->
+    <main>
+      <!-- Cart wrapper -->
+      <section class="cart">
+        <h2>Shopping Cart</h2>
+        <!-- Cart Headlines -->
+        <div class="cart-headlines">
+          <span class="product-image">Product image</span>
+          <span class="product-name">Product name</span>
+          <span class="quantity">Qty</span>
+          <span class="unit-price">Unit price</span>
+          <span class="unit-subtotal">Subtotal</span>
+        </div>
+        <!-- Cart Items -->
+        <ul class="cart-items">
+          <!-- Cart Item 1 -->
+          <li class="cart-item" id="item1">
+            <div class="product-image">
+              <img src="https://res.cloudinary.com/csicdn/image/upload/c_pad,fl_lossy,h_350,q_auto,w_350/v1/Images/Products/Misc%20Art/Bezier%20Games/full/BEZONUW.jpg" />
+            </div>
+            <div class="product-name">
+              <h3 class="name">One Night Ultimate Werewolf</h3>
+              <p class="description">Find out which colleagues are the best liars.</p>
+            </div>
+            <div class="quantity">
+              <input type="number" class="quantity" value="1" />
+            </div>
+            <div class="unit-price currency">8.95</div>
+            <div class="unit-subtotal currency">8.95</div>
+          </li>
+
+          <!-- Cart Item 2 -->
+          <li class="cart-item" id="item2">
+            <div class="product-image">
+              <img src="https://target.scene7.com/is/image/Target/GUEST_e7492e88-0546-4cbd-81f0-e8c8455f7bb6?fmt=webp&wid=1400&qlt=80" />
+            </div>
+            <div class="product-name">
+              <h3 class="name">Big Bag o' Candy</h3>
+              <p class="description">Big enough for the whole team!</p>
+            </div>
+            <div class="quantity">
+              <input type="number" class="quantity" value="1" />
+            </div>
+            <div class="unit-price currency">8.95</div>
+            <div class="unit-subtotal currency">8.95</div>
+          </li>
+        </ul>
+        <!-- Cart Totals -->
+        <div class="cart-summary">
+          <p class="coupon hidden">
+            Coupon <span class="coupon-code"></span> was successfully applied!
+          </p>
+          <div class="cart-totals">
+            <h3 class="cart-total">
+              Total: 
+              <span class="total currency">85.43</span>
+            </h3>
+            <p class="tax-note">Sales tax may be applied based on your address information.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Customer Info -->
+      <section class="customer-info">
+        <!-- Contact block -->
+        <div class="contact">
+          <h2>Your Info</h2>
+          <form action="">
+            <label for="first-name">
+              <input type="text" id="first-name" name="first-name" placeholder="*First name" /> 
+            </label>
+            <label for="last-name">
+              <input type="text" id="last-name" name="last-name" placeholder="*Last name" />
+            </label>
+            <label for="city">
+              <input type="text" id="city" name="city" placeholder="*City" />
+            </label>
+            <label for="state">
+              <input type="text" id="state" name="state" placeholder="State" />
+            </label>
+            <label for="zip">
+              <input type="text" id="zip" name="zip" placeholder="*Zip code" />
+            </label>
+            <label for="country">
+              <input type="text" id="country" name="country" placeholder="Country" />
+            </label>
+            <label for="email">
+              <input type="email" id="email" name="email" placeholder="*Email" />
+            </label>
+          </form>
+        </div>
+
+        <!-- Payment block -->
+        <div class="payment">
+          <h2>Payment</h2>
+          <form action="">
+            <label for="credit-card">
+              <input type="text" id="credit-card" name="credit card" placeholder="*Card number" />
+            </label>
+            <label for="expiration-date">
+              <input type="month" id="expiration-date" name="expiration-date" />
+            </label>
+            <label for="cvv">
+              <input type="text" id="cvv" name="cvv" placeholder="*Security code" />
+            </label>
+          </form>
+          <!-- Buy button -->
+          <form class="purchase" action="">
+            <input type="submit" id="buy-now" value="Buy Now" formaction="" />
+          </form>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <span>&copy; 2021 by CandyBreak</span>
+    </footer>
+  </body>
+</html>

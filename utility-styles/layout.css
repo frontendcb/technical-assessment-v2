@@ -1,0 +1,67 @@
+/*******************************************
+ *               LAYOUT STYLES             *
+ ******************************************* 
+ * This file contains styles related to page layout and positioning.
+ */
+body,
+header,
+main,
+footer,
+.cart-headlines,
+.cart-item,
+.cart-summary,
+.customer-info,
+.payment {
+  display: flex;
+}
+
+header, 
+main, 
+footer,
+.cart-item {
+  justify-content: center;
+  align-items: center;
+}
+
+body,
+.payment {
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+main {
+flex-direction: column;
+padding: 20rem 0;
+flex: 1 0 auto;
+}
+
+.product-image,
+.unit-price,
+.unit-subtotal {
+  flex: 2 1 0;
+}
+
+.product-name {
+  flex: 5 1 0;
+}
+
+.quantity {
+  flex: 1 1 0;
+}
+
+.coupon {
+  align-self: flex-end;
+  justify-self: flex-start;
+  flex: 1 0 auto;
+}
+
+.cart-totals {
+  justify-self: flex-end;
+  flex: 1 0 auto;
+}
+
+footer {
+  flex-shrink: 0;
+}
+
+

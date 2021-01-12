@@ -1,0 +1,65 @@
+/*******************************************
+ *                TYPOGRAPHY               *
+ *******************************************
+ * This file contains styles related to typography and font.
+ */
+
+html {
+  font-size: 1px;
+  color: var(--gray-dark);
+  font-family: -apple-system, 
+                BlinkMacSystemFont, 
+                'Helvetica', 
+                Roboto, 
+                Oxygen, 
+                Ubuntu, 
+                Cantarell, 
+                'Open Sans', 
+                sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 36rem;
+}
+
+h2 {
+  font-size: 24rem;
+}
+
+h3 {
+  font-size: 21rem;
+}
+
+h4 {
+  font-size: 18rem;
+}
+
+h5 {
+  font-size: 16rem;
+}
+
+h6 {
+  font-size: 14rem;
+}
+
+p, div, span, input, button, ul, ol, main, section {
+  font-size: 16rem;
+}
+
+.product-name .description {
+  font-size: 12rem;
+}
+
+.coupon {
+  font-size: 14rem;
+  font-weight: 600;
+}
+
+.tax-note {
+  font-size: 12rem;
+  font-style: italic;
+}

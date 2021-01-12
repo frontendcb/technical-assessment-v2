@@ -1,0 +1,204 @@
+@import "utility-styles/reset.css";
+@import "utility-styles/typography.css";
+@import "utility-styles/layout.css";
+
+:root {
+  --white: #fff;
+  --gray-light: #ccc;
+  --gray-medium: #757575;
+  --gray-dark: #444;
+  --gray-dark-transparency: rgba(57, 63, 72, 0.3);
+  --green: #2d9e28;
+  --green-dark: #048f1a;
+}
+
+/* Utility classes */
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+/* Element-based styles */
+header {
+  height: 75rem;
+  border-bottom: 1rem solid var(--gray-light);
+  box-shadow: 0 3px 5px var(--gray-dark-transparency);
+}
+
+main {
+  width: 90%;
+}
+
+.cart,
+.customer-info,
+.purchase {
+  width: 75%;
+}
+
+.cart-headlines,
+.cart-items {
+  margin: 16rem 0;
+  padding: 10rem;
+}
+
+.cart-headlines {
+  border-bottom: 1rem solid var(--gray-light);
+}
+
+.cart-headlines span {
+  display: inline-block;
+}
+
+.product-image,
+.product-name {
+  text-align: left;
+}
+
+.product-name .description {
+  color: var(--gray-medium);
+  padding: 5rem 0;
+}
+
+.quantity {
+  text-align: center;
+}
+
+.unit-price,
+.unit-subtotal,
+.cart-totals {
+  text-align: right;
+}
+
+.cart-item {
+  padding-bottom: 10rem;
+}
+
+.cart-item:not(:last-child) {
+  border-bottom: 1rem solid var(--gray-light);
+  margin-bottom: 20rem;
+}
+
+.product-image img {
+  max-width: 100rem;
+}
+
+input.quantity {
+  width: 50%;
+  padding: 5rem;
+}
+
+.cart-summary {
+  border: 1px solid var(--gray-light);
+  border-radius: 5rem;
+  padding: 15rem;
+}
+
+.cart-total,
+.tax-note,
+.coupon {
+  margin: 10rem 0;
+}
+
+.coupon {
+  color: var(--green);
+}
+
+.tax-note {
+  color: var(--gray-medium);
+}
+
+.contact, 
+.payment {
+  padding: 20rem 0;
+  width: 50%;
+}
+
+.contact form,
+.payment form {
+  padding: 15rem 0;
+}
+
+.payment form {
+  padding-bottom: 50rem;
+}
+
+.contact form input,
+.payment form input {
+  margin: 0 10rem 10rem 0;
+  height: 40rem;
+  padding-left: 15rem;
+  outline: none;
+}
+
+.contact form input:focus {
+  border: 1px solid var(--gray-dark);
+}
+
+#first-name,
+#last-name,
+#city,
+#state,
+#zip,
+#country,
+#expiration-date,
+#cvv {
+  width: 47%;
+}
+
+#email {
+  width: 97%;
+}
+
+#credit-card {
+  width: 100%;
+}
+
+#cvv {
+  float: right;
+  margin-right: 0;
+}
+
+form.purchase {
+  width: 100%;
+  padding: 0;
+}
+
+#buy-now {
+  float: right;
+  margin: 0;
+  width: 30%;
+  color: var(--white);
+  background-color: var(--green);
+  border: none;
+  border-radius: 5rem;
+}
+
+#buy-now:hover,
+#buy-now:active {
+  background-color: var(--green-dark);
+}
+
+footer {
+  padding: 20rem;
+  border-top: 1rem solid var(--gray-medium);
+}
+
+/* Media queries for smaller screen sizes */
+@media only screen and (max-width: 992px) {
+  main {
+    width: 100%;
+  }
+
+  .cart,
+  .customer-info,
+  .purchase {
+    width: 95%;
+  }
+
+  input.quantity {
+    width: 75%;
+  }
+}
