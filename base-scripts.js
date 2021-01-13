@@ -1,14 +1,18 @@
 // Namespace 
 const checkoutScripts = {};
 
-checkoutScripts.addCurrencySymbol = () => {
-  let currencyFields = $('.currency');
-  [...currencyFields].forEach(currencyField => {
-    let priceText = $(currencyField).text();
-    $(currencyField).text('$' + priceText);
+// Add currency symbol to price text
+// Parameter: takes an array of one or more jQuery objects
+checkoutScripts.addCurrencySymbol = (currencyElements) => {
+  [...currencyElements].forEach(currencyElement => {
+    let priceText = $(currencyElement).text();
+    $(currencyElement).text('$' + priceText);
   })
 }
 
 $(document).ready(() => {
-  checkoutScripts.addCurrencySymbol();
+  // Get all currency elements on the page as jQuery objects
+  let currencyFields = $('.currency');
+  
+  checkoutScripts.addCurrencySymbol(currencyFields);
 });
